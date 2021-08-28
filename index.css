@@ -205,13 +205,15 @@ hr{
     .categories-carousel{
         margin-left: 7%;
         width: 100%;
+    }
+    .content-corousel{
         height: 48px;
     }
     .right-section{
         margin-left: 8%;
     }
     .video-section{
-        margin-top: 4%;
+        margin-top: 5%;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -262,15 +264,17 @@ hr{
     }
     .categories-carousel{
         margin-left: -2%;
-        height: 38px;
         width: 109%;
+    }
+    .content-corousel{
+        height: 38px;
     }
     .right-section{
         margin-top: 5%;
         margin-left: 1%;
     }
     .video-section{
-        margin-top: 7vh;
+        margin-top: 8vh;
     }
 }
 
