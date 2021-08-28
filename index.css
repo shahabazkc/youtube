@@ -72,7 +72,7 @@ body{
 .content-corousel{
     display: flex;
     overflow-x: scroll;
-    width: 94%;
+    width: 93%;
 }
 .content-item{
     cursor: pointer;
@@ -99,7 +99,7 @@ body{
     margin-right: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-gap: 5px;
+    grid-gap: 8px;
 }
 .video-title{
     font-weight: bold;
@@ -111,8 +111,8 @@ body{
     width: 30px;
 }
 .categories-carousel{
-    width: 100%;
     position: fixed;
+    height: 48px;
     background-color: white;
 }
 .content-card{
@@ -145,6 +145,20 @@ hr{
     font-weight: lighter;
     font-size: small;
 }
+.thumbnail{
+    position: relative;
+}
+.thumbnail::before {
+    content: attr(data-duration);
+    position: absolute;
+    background-color: rgba(0, 0, 0, .85);
+    color: white;
+    right: 5px;
+    bottom: 5px;
+    padding: .1em .3em;
+    border-radius: .3em;
+    font-size: .9rem;
+  }
 @media only screen and (min-width: 700px) {
     .nav-item.common,.bar{
         font-size: 23px;
@@ -197,6 +211,9 @@ hr{
     }
     .video-section{
         margin-top: 4%;
+    }
+    .categories-carousel{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -255,4 +272,8 @@ hr{
     .video-section{
         margin-top: 7vh;
     }
+    .categories-carousel{
+        width: 109%;
+    }
 }
+
